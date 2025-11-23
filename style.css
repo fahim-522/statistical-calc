@@ -1,6 +1,7 @@
 body{
     background-color: #2e222f;
     color: #c7dcd0;
+    text-shadow: black 2px 2px 5px;
 }
 #data{
     background-color: #694f62;
@@ -9,21 +10,39 @@ body{
     border-radius: 9px;
     padding: 10px;
     font-size: 3em;
+    font-family: monospace;
+    box-shadow: black 3px 3px 5px;
 }
-#sort{
+#data:focus {
+    outline: none;
+    background-color: hsl(316, 14%, 49%);
+    box-shadow: black 5px 5px 5px;
+}
+#data:hover{
+    background-color: hsl(316, 14%, 49%);
+    box-shadow: black 5px 5px 5px;
+}
+#data:active{
+    background-color: hsl(316, 14%, 55%);
+    box-shadow: black 2px 2px 5px;
+}
+.selection{
     background-color: #694f62;
     color: #c7dcd0;
     border: none;
     border-radius: 9px;
     padding: 10px;
     font-size: 3em;
-    cursor:pointer;
+    cursor:pointer; 
+    box-shadow: black 3px 3px 5px;
 }
-#sort:hover{
+.selection:hover{
     background-color: hsl(316, 14%, 49%);
+    box-shadow: black 5px 5px 5px;
 }
-#sort:active{
+.selection:active{
     background-color: hsl(316, 14%, 55%);
+    box-shadow: black 2px 2px 5px;
 }
 label{
     padding: 10px;
@@ -31,4 +50,9 @@ label{
     cursor: pointer;
     font-weight: bold;
     font-family: Arial;
+}
+#result{
+    font-size: 3em;
+    font-family: monospace;
+    color: #c7dcd0;
 }
