@@ -56,7 +56,7 @@ label{
     font-family: monospace;
     color: #c7dcd0;
 }
-@media (max-height:700px) {
+@media (max-width:1024px) {
     #data{
         font-size: 1.1rem;
     }
