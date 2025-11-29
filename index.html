@@ -4,6 +4,7 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
     <title>Statistical calculator</title>
 </head> 
 <body>
@@ -13,11 +14,11 @@
     <br><br>
 
     <label id="selectLabel">Select what to do</label><br>
-
-    <button class="selection">mean</button>
-    <button class="selection">median</button>
-    <button class="selection">mode</button>
-    
+    <div id="btn-container">
+    <button onclick="meanFind()" class="selection" id="meanBtn">mean</button>
+    <button onclick="medianFind()" class="selection" id="medianBtn">median</button>
+    <button class="selection" id="modeBtn">mode</button>
+    </div>
     <br><br>
 
     <label for="result">result:</label>
